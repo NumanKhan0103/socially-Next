@@ -1,3 +1,4 @@
+import { ThemeToggler } from '@/components/ThemeToggle';
 import { Button } from '@/components/ui/button';
 import {
   SignInButton,
@@ -16,12 +17,14 @@ export default function Home() {
           <Button>
             Sign In
           </Button>
-          </SignInButton>
+        </SignInButton>
         <SignUpButton mode='modal' />
       </SignedOut>
       <SignedIn>
         <UserButton />
       </SignedIn>
+
+      <ThemeToggler />
     </>
   );
 }
