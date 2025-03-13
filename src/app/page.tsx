@@ -1,4 +1,4 @@
-import { ThemeToggler } from '@/components/ThemeToggle';
+import  ThemeToggler  from '@/components/ThemeToggle';
 import { Button } from '@/components/ui/button';
 import {
   SignInButton,
@@ -11,20 +11,10 @@ import {
 export default function Home() {
   return (
     <>
+    <div className='m-4'>
 
-      <SignedOut>
-        <SignInButton mode='modal'>
-          <Button>
-            Sign In
-          </Button>
-        </SignInButton>
-        <SignUpButton mode='modal' />
-      </SignedOut>
-      <SignedIn>
-        <UserButton />
-      </SignedIn>
-
-      <ThemeToggler />
+      <h1> Main Content Here</h1>
+    </div>
     </>
   );
 }
