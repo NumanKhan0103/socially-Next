@@ -1,22 +1,10 @@
-import { currentUser } from "@clerk/nextjs/server";
+
 import { SignInButton, SignUpButton } from "@clerk/nextjs";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
-export default async function Sidebar() {
-
-    const authUser = await currentUser();
-    if (!authUser) return <UnAuthenticatedSidebar />;
-
+export default function UnAuthenticatedSidebar() {
     return (
-       <div> side bar</div>
-
-    )
-}
-
-
-
-const UnAuthenticatedSidebar = () => (
     <div className="sticky top-20">
       <Card>
         <CardHeader>
